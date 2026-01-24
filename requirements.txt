@@ -1,0 +1,10 @@
+qdrant-client[fastembed]
+fastembed
+openai
+tenacity
+tqdm
+numpy
+pathlib
+pymupdf
+qdrant-client
+dotenv

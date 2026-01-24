@@ -1,0 +1,28 @@
+[llm]
+provider = "openai"
+chat_model = "gpt-4o-mini"
+
+[rag]
+corpus_path = "../data/AI Engineering.pdf"
+chunk_size = 512
+chunk_overlap = 64
+top_k = 5
+
+
+[vector_store]
+type = "qdrant"
+mode = "local"
+url = "http://localhost:6333"
+collection_name = "knowledge_base_chunks"
+storage_path = "./qdrant_storage"
+
+
+[dense_vector]
+name = "dense"
+model = "sentence-transformers/all-MiniLM-L6-v2"
+distance = "cosine"
+
+[sparse_vector]
+enabled = true
+name = "sparse"
+model = "Qdrant/bm25"
