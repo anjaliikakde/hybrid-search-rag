@@ -8,3 +8,4 @@ pathlib
 pymupdf
 qdrant-client
 dotenv
+pandas
